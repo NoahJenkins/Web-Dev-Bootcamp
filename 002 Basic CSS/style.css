@@ -9,6 +9,10 @@ h2 {
   cursor: pointer;
 }
 
+img {
+  float: left;
+}
+
 p {
   line-height: 20px;
   font-style: italic;
