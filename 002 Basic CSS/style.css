@@ -3,9 +3,31 @@
 } */
 
 h2 {
-  color :red;
+  color :#A8A8A8;
+  text-align: center;
+  border: 5px dashed purple;
+  cursor: pointer;
 }
 
 p {
-  color: pink
+  line-height: 20px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 100%;
+  font-family: "times new roman", sans-serif;
+}
+
+
+li {display: inline-block;}
+
+.webtext {
+  font-family: "Courier", sans-serif;
+  color: blue
+}
+
+#div1 {
+  background-color: #CCFFFF;
+  border: 1px solid black;
+  margin: 10px 5px 10px 5px;
+  padding: 10px 5px 10px 5px;
 }

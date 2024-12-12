@@ -1,1 +1,8 @@
 h2 {color: blue;}
+
+#div1 {
+    background-color: #CCFFFF;
+    border: 1px solid black;
+    margin: 10px 5px 10px 5px;
+    padding: 10px 5px 10px 5px;
+  }
