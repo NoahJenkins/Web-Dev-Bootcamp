@@ -13,6 +13,7 @@ html {
 h1 {
   font-size: 3rem;
   color: #e2dbdd;
+  margin-bottom: 4rem;
 }
 
 hr {
@@ -21,6 +22,11 @@ hr {
   border: 3px solid #F05F44;
   max-width: 65px;
   opacity: 1;  
+}
+
+/* Fixed the typo in the .buffer class */
+.buffer {
+  height: 5rem;
 }
 
 .btn {
@@ -40,7 +46,8 @@ hr {
   border-width: 4px;
 }
 
+/* Added width: auto; to the .btn-xl class to ensure the button does not take the full width of the page */
 .btn-xl {
   padding: 1rem 2rem;
-
+  width: auto;
 }
