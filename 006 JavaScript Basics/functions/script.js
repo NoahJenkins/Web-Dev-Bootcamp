@@ -20,6 +20,9 @@ sing("Good morning!");
 sing("backstreet's back alright");
 
 function multiply(a,b) {
-    return a * b;
-    
+    return a * b;   
 }
+
+// parameters vs arguments
+// parameters are used when defining a function, in the above example a and b are parameters
+// arguments are used when calling a function, in the above example 5 and 10 are arguments
