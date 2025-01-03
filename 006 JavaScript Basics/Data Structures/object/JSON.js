@@ -4,7 +4,7 @@ var user = {
     hobby: "Soccer",
     isMarried: false,
     spells: ["abrakadabra", "shazam", "boo"],
-    shout; function() {
+    shout: function() {
         console.log("AHHHHHHH!");
     }
 };
