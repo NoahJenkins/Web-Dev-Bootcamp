@@ -12,7 +12,19 @@ var ul = document.querySelector("ul");
 button.addEventListener("click", function() {
     console.log("click is working");
     var li = document.createElement("li");
-    if (input.value.length > 0) {
+    if (input.value > 0) {
+        li.appendChild(document.createTextNode(input.value));
+        ul.appendChild(li);
+        input.value = "";
+    }
+    else {
+        alert("Please do not leave the box empty");
+    }
+}
+);
+button.addEventListener("keypress", function(event) {
+    console.log("keypress is working");
+    if (input.value > 0 && event.keyCode === 13) {
         li.appendChild(document.createTextNode(input.value));
         ul.appendChild(li);
         input.value = "";
