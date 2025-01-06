@@ -1,5 +1,5 @@
-// var button = document.getElementsByTagName("button")[0];
 
+// var button = document.getElementsByTagName("button")[0];
 // button.addEventListener('click', function() {
 //     console.log("Button clicked");
 //     alert("You clicked me!" );
@@ -20,7 +20,5 @@ button.addEventListener("click", function() {
     else {
         alert("Please do not leave the box empty");
     }
-    li.appendChild(document.createTextNode(input.value));
-    ul.appendChild(li);
 }
 );
