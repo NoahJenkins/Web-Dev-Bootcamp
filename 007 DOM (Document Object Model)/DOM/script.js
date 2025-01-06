@@ -9,10 +9,11 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 
+
 button.addEventListener("click", function() {
     console.log("click is working");
     var li = document.createElement("li");
-    if (input.value > 0) {
+    if (input.value.length > 0) {
         li.appendChild(document.createTextNode(input.value));
         ul.appendChild(li);
         input.value = "";
@@ -22,15 +23,13 @@ button.addEventListener("click", function() {
     }
 }
 );
-button.addEventListener("keypress", function(event) {
+input.addEventListener("keypress", function(event) {
     console.log("keypress is working");
-    if (input.value > 0 && event.keyCode === 13) {
+    if (input.value.length > 0 && event.key === "Enter") {
+        var li = document.createElement("li");
         li.appendChild(document.createTextNode(input.value));
         ul.appendChild(li);
-        input.value = "";
+        input.value
+         = "";
     }
-    else {
-        alert("Please do not leave the box empty");
-    }
-}
-);
+});
