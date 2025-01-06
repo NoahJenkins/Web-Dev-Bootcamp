@@ -9,27 +9,28 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 
+function inputlength() {
+    return input.value.length;
+}
+
+function createListElement() {
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(input.value));
+        ul.appendChild(li);
+        input.value = "";
+}
+
 
 button.addEventListener("click", function() {
     console.log("click is working");
-    var li = document.createElement("li");
-    if (input.value.length > 0) {
-        li.appendChild(document.createTextNode(input.value));
-        ul.appendChild(li);
-        input.value = "";
-    }
-    else {
-        alert("Please do not leave the box empty");
+    if (inputlength() > 0) {
+        createListElement();
     }
 }
 );
 input.addEventListener("keypress", function(event) {
     console.log("keypress is working");
-    if (input.value.length > 0 && event.key === "Enter") {
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(input.value));
-        ul.appendChild(li);
-        input.value
-         = "";
+    if (inputlength() > 0 && event.key === "Enter") {
+        createListElement();
     }
 });
