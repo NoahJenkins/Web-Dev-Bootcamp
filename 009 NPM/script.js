@@ -1,3 +1,6 @@
-import {without} from 'lodash'
+const _ = require('lodash');
 
-console.log(without)
+const array = [1, 2, 3, 4, 5];
+const shuffled = _.shuffle(array);
+
+console.log('Shuffled Array:', shuffled);
