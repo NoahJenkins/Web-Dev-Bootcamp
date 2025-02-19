@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import Hello from './Hello.jsx'
+import Card from './Card.jsx'
 import "tachyons/css/tachyons.min.css";
 
 createRoot(document.getElementById('root')).render(
