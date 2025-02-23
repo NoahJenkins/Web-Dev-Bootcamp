@@ -13,6 +13,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "SEGA";
+  src: url("./fonts/SEGA.TTF") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the SEGA font */
+h1 {
+  font-family: "SEGA", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #0ccac4; /* SEGA blue color */
+  text-shadow: 4px 4px 0px #063c5e; /* Adds a shadow effect */
+}
+
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -28,6 +45,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: linear-gradient(to right, #1e3c72, #2a5298); /* Dark blue gradient */
 }
 
 h1 {
