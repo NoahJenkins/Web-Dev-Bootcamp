@@ -18,7 +18,17 @@ console.log("2",file.toString());
 //     }
 // });
 
-fs.writeFile('bye.txt', 'Sad to see you go', err => { //writeFile will create a new file with the text)
+// fs.writeFile('bye.txt', 'Sad to see you go', err => { //writeFile will create a new file with the text)
+//     if (err) {
+//         console.log(err);
+//     }});
+
+fs.unlink('bye.txt', err => { //deleteFile will delete the file
     if (err) {
         console.log(err);
-    }});
+    }
+    else {
+        console.log('file deleted');
+    }
+
+});
