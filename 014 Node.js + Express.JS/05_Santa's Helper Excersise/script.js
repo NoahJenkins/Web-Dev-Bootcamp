@@ -1,8 +1,8 @@
 const fs = require('fs');
+const path = require('path');
 
-
-const floor = fs.readFileSync('./floor.txt');
-console.log('Floor:', floor);
+const floor = fs.readFileSync(path.join(__dirname, 'floor.txt'));
+console.log('Floor:', floor.toString());
 const floorArray = floor.toString().split('');
 let currentFloor = 0;
 
