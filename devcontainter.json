@@ -7,7 +7,10 @@
     "formulahendry.code-runner",
     "substms.hugo",
     "esbenp.prettier-vscode",
-    "alexcvzz.vscode-sqlite"
+    "alexcvzz.vscode-sqlite",
+    "postman.postman-for-vscode",
+    "ms-azuretools.vscode-docker",
+    "ms-edgedevtools.vscode-edge-devtools"
   ],
   "settings": {
     "workbench.iconTheme": "vscode-icons",
